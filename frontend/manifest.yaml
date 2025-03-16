@@ -63,7 +63,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: app1
+  name: frotnend 
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
@@ -82,4 +82,4 @@ spec:
           service:
             name: frontend
             port:
-              number: 80
+              number: 8080
